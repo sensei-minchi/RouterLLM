@@ -11,3 +11,9 @@ Execution Plan:-
 Testing Plan :-
 1) Create a test set, route them to each model and compute score
 2) Use router, compute score and compare.
+
+
+LLMS Used:
+1) Gemma :- *gemma-3-27b-it*
+2) Llama 3.1 :- *meta-llama/llama-3.1-8b-instruct*
+3) Llama 3.3 :- *meta-llama/llama-3.3-70b-instruct*
