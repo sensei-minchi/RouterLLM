@@ -14,8 +14,9 @@ Testing Plan :-
 
 
 LLMS Used:
-1) Gemma :- *gemma-3-27b-it* -- right now 
-2) Llama 3.1 :- *meta-llama/llama-3.1-8b-instant*
-3) Llama 3.3 :- *meta-llama/llama-3.3-70b-versatile*
+1) Llama 3.1 :- *meta-llama/llama-3.1-8b-instant*
+2) Llama 3.3 :- *meta-llama/llama-3.3-70b-versatile*
 
 Encoder Used:- BAAI/bge-small-en-v1.5
+
+Judge Used :- meta-llama/llama-3.1-8b-instant
