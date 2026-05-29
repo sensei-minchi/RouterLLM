@@ -1,5 +1,5 @@
 #importing the required packages and libraries
-from models.judge import LlamaJudge
+from models.judge import DeepSeekJudge
 from tqdm import tqdm
 import pandas as pd
 import numpy as np
@@ -12,13 +12,15 @@ llama31_responses = "data/llama31_responses.csv"
 llama33_responses = "data/llama33_responses.csv"
 
 #Judge
-judge = LlamaJudge()
+judge = DeepSeekJudge()
 
 #Loading datasets
 df = pd.read_csv(prompts)
 df_llm31 = pd.read_csv(llama31_responses)
 df_llm33 = pd.read_csv(llama33_responses)
 
+# df_llm31['quality_score'] = None
+# df_llm33['quality_score'] = None
 
 def parse_score(score_val):
     try:

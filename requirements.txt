@@ -1,3 +1,9 @@
 google-genai
 numpy
 tensorflow
+sklearn
+datasets
+pandas
+tqdm
+sentence-transformers
+xgboost

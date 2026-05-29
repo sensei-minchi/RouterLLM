@@ -33,7 +33,7 @@ def create_np(csv_location, np_location):
             ):
         if index < minn:
             continue
-        encoded_resp = encode_response(rows["responses"])
+        encoded_resp = encode_response(rows["prompt"])
         embd.append(encoded_resp)
 
     embd = np.asarray(embd, dtype=np.float32)
@@ -43,9 +43,12 @@ def create_np(csv_location, np_location):
 
 llm31_csv = "C://programming/Projects/Router LLM/data/llama31_responses.csv"
 llm33_csv = "C://programming/Projects/Router LLM/data/llama33_responses.csv"
+prompt = "C:\\programming\\Projects\\Router LLM\\data\\router_dataset.csv"
+prompts_np = "prompts.npy"
 
-llm31_np = "encoder/llm31.npy"
-llm33_np = "encoder/llm33.npy"
+llm31_np = "llm31.npy"
+llm33_np = "llm33.npy"
 
-create_np(llm31_csv, llm31_np)
-create_np(llm33_csv, llm33_np)
+# create_np(llm31_csv, llm31_np)
+# create_np(llm33_csv, llm33_np)
+create_np(prompt, prompts_np)

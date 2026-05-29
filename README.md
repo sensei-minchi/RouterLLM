@@ -20,3 +20,6 @@ LLMS Used:
 Encoder Used:- BAAI/bge-small-en-v1.5
 
 Judge Used :- meta-llama/llama-3.1-8b-instant
+Judge changed:- Qwen 3 being used now
+
+Change:- New model will try to predict the difference between scores, if difference below a certain threshold, use the cheaper model, else use the larger model
